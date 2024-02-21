@@ -1,0 +1,58 @@
+.containerClearCart{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 1001;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, .8);
+}
+.ClearCart{
+    position: absolute;
+    inset: 30% 0 0 0;
+    margin: 0 auto;
+    background-color: rgb(66, 65, 77);
+    color: #fff;
+    width: 100%;
+    max-width: 450px;
+    height: max-content;
+    min-height: 150px;
+    border-radius: 10px;
+    padding: 20px 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.ClearCart h6{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0;
+    width: 85%;
+}
+.ClearCart .Hicon-close{
+    position: absolute;
+    right: 10px;
+}
+.HButtonsClearCart{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.HButtonsClearCart button{
+    cursor: pointer;
+    padding: 6px 0;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgb(92, 91, 102);
+}
+.HButtonsClearCart .button_sky_blue{
+    background-color: rgb(128, 235, 255);
+    color: #000;
+}

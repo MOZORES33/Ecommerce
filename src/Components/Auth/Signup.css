@@ -1,0 +1,82 @@
+.signUp{
+    padding: 30px 0;
+    background-color: rgb(232, 231, 255);
+}
+.containerSignUp{
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+}
+.containerSignUp .img{
+    background-image: url('../../assets/img/SignUp.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 85%;
+    height: 300px;
+    margin: auto;
+}
+.containerSignUp h3{
+    font-weight: bold;
+}
+.containerSignUp h6{
+    text-align: left;
+    margin: 0 auto 5px;
+    font-size: 18px;
+    width: 85%;
+}
+.containerSignUp input[type="text"], .containerSignUp input[type="password"]{
+    display: block;
+    background-color: rgb(232, 231, 255);
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: solid rgb(211, 211, 217) 1px;
+    margin: 0 auto 10px;
+    width: 85%;
+    outline: none;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+.containerSignUp hr{
+    width: 90%;
+    margin: 20px auto;
+    border: solid black 1px;
+    color: black;
+}
+.incorrectLogin{
+    display: none;
+    width: max-content;
+    max-width: 80%;
+    font-size: 14px;
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    border-radius: 5px;
+    margin: 5px auto 10px;
+    padding: 15px 10px;
+}
+.activeincorrectLogin{
+    display: block;
+}
+.containerSignUp input[type="button"]{
+    background-color: rgb(40, 40, 163);
+    width: 85%;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Open sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.LRegister, .LRegister a{
+    font-size: 18px;
+    line-height: 50px;
+}
+@media screen and (max-width: 440px) {
+    .containerSignUp{
+        width: auto;
+        margin: 0 5px;
+    }
+}

@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&display=swap');
+.main{
+    background-color: rgb(24, 26, 27);
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    background-image: url('../../assets/img/fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.title{
+    max-width: 743px;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(22, 22, 19);
+    color: #f2f2f2;
+    margin: auto;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container_card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.card{
+    width: 250px;
+    min-height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(228, 53, 53, 0.2);
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    transition: all 0.25s;
+}
+.card h6{
+    font-size: 18px;
+}
+.card p{
+    margin: 0;
+    margin-top: auto;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.card button{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgb(84, 139, 2147);
+    background: linear-gradient(
+        142deg,
+        rgba(84,139,247,1) 0%,
+        rgba(173, 83, 228, 1) 100%
+    );
+}
+.detail_product{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.detail_product p{
+    width: max-content;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 8px;
+    color: white;
+    cursor: pointer;
+    background: rgb(84, 139, 2147);
+    background: linear-gradient(
+        142deg,
+        rgba(84,139,247,1) 0%,
+        rgba(173, 83, 228, 1) 100%
+    );
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
+    position: relative;
+}
+.detail_product p::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px; /* Asegúrate de establecer una altura para el degradado */
+}
+.detail_product p:hover::after{
+    background: linear-gradient(142deg, rgba(84,139,247,1) 0%, rgba(173, 83, 228, 1) 100%);
+}
+.productNotFound{
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 50px 0;
+    padding: 0 30px;
+}
+.productNotFound h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin: auto;
+    line-height: 100px;    
+}
+.container_modal_products_details{
+    font-family: 'Abel', sans-serif;
+    visibility: hidden;
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 99;
+    width: 100%;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: .0;
+    transition: all 0.3s;
+}
+.activecontainerModal{
+    visibility: visible;
+    opacity: 1;
+}
+.container_details{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_details {
+    position: relative;
+	display: flex;
+	height: 500px;
+    max-width: 100%;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.30);
+}
+.card_details .Hicon-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.card__image {
+    height: 500px;
+    background-color: #fff;
+}
+.card__image img {
+	object-fit: contain;
+    max-width: 500px;
+	height: 100%;
+}
+.card__content {
+	width: 350px;
+	background: #FFF;
+    padding: 30px 20px;
+}
+.card__content__tag {
+	display: flex;
+	gap: 1rem;
+}
+.card__content__tag span {
+	background: #E9E9E9;
+    font-size: 15px;
+	border-radius: 8px;
+    padding: 3px 5px;
+}
+.card__content__title {
+	margin: 10px 0;
+    font-size: 20px;
+	font-weight: 700;
+    height: 65px;
+    overflow-y: auto;
+}
+.card__content__info {
+	text-align: justify;
+    font-size: 17px;
+	line-height: 1.4;
+	color: #333;
+    height: 220px;
+    margin: 0;
+    overflow-y: auto;
+}
+.card__content__config {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    margin-bottom: 10px;
+}
+.card__content__config .price {
+    font-size: 34px;
+}
+.card__content__action{
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    letter-spacing: .6px;
+	background: #232343;
+	color: #FFF;
+    padding: 5px 10px;
+	text-transform: uppercase;
+	text-align: center;
+    font-size: 17px;
+}
+
+.containerSliderPrincipal{
+    box-shadow: 0px 1px 5px 3px rgba(79, 79, 79, 0.5);
+    width: 100vw;
+    max-width: 743px;
+    height: 50vw;
+    max-height: 380px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.imgSliderPrincipal{
+    width: 100vw;
+    max-width: 743px;
+    height: 50vw;
+    max-height: 380px;
+    object-fit: cover;
+}
+.sliderPrincipal{
+    background-color: #e7e7e7;
+    height: 50vw;
+    max-height: 380px;
+}
+.sliderSection{
+    display: none;
+}
+.carrouselActive{
+    display: block;
+    visibility: visible;
+    animation: imgScale linear .4s forwards;
+}
+@keyframes imgScale {
+    0%{opacity: .5;}
+    
+    100%{opacity: 1;}
+}
+.containerBtn{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    place-items: center;
+    display: grid;
+    height: 100%;
+    width: 30%;
+}
+.containerBtn i{
+    Color: rgba(255, 255, 255, 0.7);
+    width: 40px;
+    height: 40px;
+    font-size: 50px;
+    text-align: center;
+}
+.containerBtn:hover i{
+    Color: rgba(255, 255, 255);
+}
+.sliderbtnLeft{
+    left: 0;
+}
+.sliderbtnRight{
+    right: 0;
+}
+.sliderbtnLeft i{
+    position: absolute;
+    left: 10px;
+}
+.sliderbtnRight i{
+    position: absolute;
+    right: 10px;
+}
+@media screen and (max-width: 880px) {
+    .card_details {
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        height: max-content;
+    }
+    .card__image{
+        height: 200px;
+        width: 100%;
+        text-align: center;
+    }
+    .card__image img{
+        width: 100%;
+    }
+    .card__content{
+        width: 100%;
+        padding: 30px 20px;
+    }
+}

@@ -1,0 +1,108 @@
+.container_carga{
+    display: flex;
+    justify-content: center;
+    background-color: #0860b4;
+    background-image: linear-gradient(to right, #040f50 0%, #0860b4  51%, #040f50  100%);
+}
+.container_carga .form_carga{
+    background-color: #fff;
+    border: double 1px #000;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px 0;
+    width: 100%;
+    max-width: 350px;
+}
+.container_carga .form_carga .container_carga_imagen{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    max-height: 100vw;
+    border-radius: 15px;
+    background-color: rgb(205, 229, 254);
+    border: solid 3px rgb(11, 115, 218);
+    text-align: center;
+    color: rgb(11, 115, 218);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.container_carga_imagen svg{
+    font-size: 40px;
+    position: absolute;
+    top: calc(50% - 40px);
+}
+.container_carga_imagen h6{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+}
+.img_carga{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.img_carga img{
+    object-fit: contain;
+}
+.container_carga_imagen input{
+    display: none;
+}
+
+.container_carga .form_carga p{
+    font-size: 14px;
+    text-align: center;
+}
+.container_carga .form_carga label{
+    font-size: 16px;
+}
+.container_carga .form_carga label span{
+    font-size: 20px;
+    color: rgb(196, 10, 10);
+}
+.container_carga .form_carga input{
+    margin-bottom: 5px;
+}
+.container_carga .form_carga input[type=text]{
+    border-radius: 5px;
+    border: solid 1px #000;
+    width: 100%;
+}
+.container_select_category{
+    display: flex;
+    height: 35px;
+}
+.form_carga .container_select_category .add_category{
+    margin: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: solid 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add_category svg{
+    font-size: 16px;
+}
+.container_select_category select{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.container_carga .form_carga input[type=checkbox]{
+    margin-right: 5px;
+}
+.container_carga .form_carga button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin: 10px 0;
+    width: 100%;
+}

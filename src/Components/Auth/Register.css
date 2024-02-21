@@ -1,0 +1,122 @@
+.Register{
+    padding: 30px 0;
+    background-color: rgb(232, 231, 255);
+}
+.containerRegister{
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+}
+.containerRegister .img{
+    background-image: url('../../assets/img/SignUp.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 85%;
+    height: 300px;
+    margin: auto;
+}
+.containerRegister h3{
+    font-weight: bold;
+}
+.containerRegister h6{
+    text-align: left;
+    margin: 0 auto 5px;
+    font-size: 18px;
+    width: 85%;
+}
+.containerRegister h6 span{
+    font-size: 14px;
+}
+.containerRegister input[type="text"], .containerRegister input[type="password"]{
+    display: block;
+    background-color: rgb(232, 231, 255);
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: solid rgb(211, 211, 217) 1px;
+    margin: 0 auto 10px;
+    width: 85%;
+    outline: none;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+.containerRegister hr{
+    width: 90%;
+    margin: 20px auto;
+    border: solid black 1px;
+    color: black;
+}
+.incorrectRegister{
+    display: none;
+    width: max-content;
+    max-width: 81%;
+    font-size: 14px;
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    border-radius: 5px;
+    margin: 5px auto 10px;
+    padding: 15px 10px;
+}.activeincorrectRegister{
+    display: block;
+}
+.containerRegister input[type="button"]{
+    background-color: rgb(40, 40, 163);
+    width: 85%;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Open sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.RLogin, .RLogin a{
+    font-size: 18px;
+    line-height: 50px;
+}
+.bars{
+    width: 85%;
+    margin: 8px auto;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 6px;
+    border-radius: 3px;
+    background: #dfe1f0;
+}
+.bars div{
+    height: 6px;
+    border-radius: 3px;
+    transition: .4s;
+    width: 0%;
+}
+.bars.debil div{
+    background-color: #e24c71;
+    width: 33.33%;
+}
+.bars.mediana div{
+    background-color: #f39845;
+    width: 66.66%;
+}
+.bars.fuerte div{
+    background-color: #57c558;
+    width: 100%;
+}
+.strength{
+    height: 30px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #868b94;
+    font-size: 18px;
+    width: 85%;
+    margin: auto;
+}
+@media screen and (max-width: 440px) {
+    .containerRegister{
+        width: auto;
+        margin: 0 5px;
+    }
+}
